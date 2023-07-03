@@ -1,0 +1,29 @@
+<h4>Add a Todo:</h4>
+
+
+<form (ngSubmit)="onSubmit()" class="card p-3 bg-lightform " style="width:50%">
+    <div class="mb-3">
+      <label for="title" class="form-label">Todo Title</label>
+      <input [(ngModel)]="title" name="title" type="text" class="form-control" id="title" aria-describedby="title">
+   </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Todo Description</label>
+      <input [(ngModel)]="desc" name="desc" type="text" class="form-control" id="desc">
+    </div> 
+<!-- 
+    <div class=" mb-1 form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Active
+        </label>
+      </div>
+      <div class=" mb-3 form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Disable
+        </label>
+      </div> -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+    
+
